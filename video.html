@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+</head>
+<body>
+    <!--
+        <video>
+
+        - src
+        - controls
+        - se não funcionar
+            - fallback content
+        - source
+            - src
+            - type
+        - autoplay -> Inicio o vídeo sozinho (Não funciona em todos os navegadores)
+        - preload 
+            - auto -> Baixa o vídeo todo antes do usuário dar play
+            - metadata -> Carrege o básico do vídeo
+            - none -> Não faz preload de nada até eu apertar o botão
+        - loop -> Faz o vídeo rodar em loop (Não funciona em todos os navegadores)
+        - muted -> Faz o vídeo começar mutado
+        - poster -> Eu posso colocar uma tumb no vídeo
+    -->
+
+    <video controls
+        width="500"
+        height="400"
+        preload="auto"
+        loop
+        muted
+        poster="./image.jpg"
+    >
+        <source src="./video.mp4" type="video/mp4">
+        <p>Este navegador não suporta vídeos, baixe-o aqui</p>
+    </video>
+</body>
+</html>

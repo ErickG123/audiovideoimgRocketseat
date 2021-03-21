@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <!--
+        <audio>
+
+        - src
+        - controls
+        - se não funcionar
+            - fallback content
+        - source
+            - src
+            - type
+        - autoplay -> Inicio o vídeo sozinho (Não funciona em todos os navegadores)
+        - loop -> Faz o vídeo rodar em loop (Não funciona em todos os navegadores)
+        - muted -> Faz o vídeo começar mutado
+    -->
+    
+    <audio controls
+        autoplay
+        muted
+        loop
+    >
+        <source src="./audio.mp3" type="audio/mp3">
+        <p>Seu navegador não suporta audio</p>
+    </audio>
+</body>
+</html>
